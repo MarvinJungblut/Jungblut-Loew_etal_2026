@@ -1,0 +1,24 @@
+name: pd1-pdl1-analysis
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # The notebooks were created with Python 3.12.
+  - python=3.12
+
+  # Numerical analysis, tables, fitting, and plotting.
+  - numpy>=1.26,<3
+  - pandas>=2.2,<3
+  - scipy>=1.13,<2
+  - matplotlib>=3.8,<4
+
+  # Spreadsheet input/output (.xlsx and legacy .xls).
+  - openpyxl>=3.1,<4
+  - xlrd>=2.0,<3
+
+  # Notebook runtime.
+  - jupyterlab>=4.2,<5
+  - ipykernel>=6.29,<8
+  - ipython>=8.25,<10
